@@ -18,6 +18,10 @@ const App=()=>{
      {
        console.log('this is via object keys ',i)
      })
+
+     Array.from(byclass).map((j)=>{
+       console.log('this is via array from ',j)
+     })
     })
   }
 
