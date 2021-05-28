@@ -2,9 +2,6 @@
 import './App.css';
 
 const App=()=>{
-
-
-  
   const click=()=>{
     //below will give the 2th child of element with id wrapper and element with classNamename span-name
     //console.log(document.querySelector('#wrapper li:nth-child(1)'))
@@ -12,6 +9,15 @@ const App=()=>{
     spanList.forEach(function(item){
      console.log(item.textContent)
      //the above will give the text on that span
+
+
+     const byclass=document.getElementsByClassName('list')
+     console.log(byclass)
+     console.log(typeof(byclass))
+     Object.keys(byclass).map((i)=>
+     {
+       console.log('this is via object keys ',i)
+     })
     })
   }
 
